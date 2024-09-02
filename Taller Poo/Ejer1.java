@@ -1,4 +1,4 @@
-package Taller Poo;
+
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -12,7 +12,7 @@ public class Ejer1 {
         
         Scanner sn = new Scanner(System.in);
         boolean salir = false;
-        int opcion; //Guardaremos la opcion del usuario
+        int opcion; 
  
         while (!salir) {
  
