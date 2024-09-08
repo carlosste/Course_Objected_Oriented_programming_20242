@@ -1,3 +1,4 @@
+package Ejer1;
 public class CuentaBancaria {
 
     private int numeroCuenta;

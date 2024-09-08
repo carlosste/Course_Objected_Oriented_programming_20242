@@ -1,3 +1,4 @@
+package Ejer2;
 public class LibroVirtual {
 
     private String nombre;
