@@ -7,10 +7,10 @@ public class Ejer2 {
     
     public static void main (String[] args){
         
-        LibroVirtual libroVirtual1 = new LibroVirtual ("Fisica" , "Juan A", 122, 10462, false);
-        LibroVirtual libroVirtual2 = new LibroVirtual ("Computacion" , "alberto M", 170, 10463, false);
-        LibroVirtual libroVirtual3 = new LibroVirtual ("astronomia" , "Felipe J", 212, 10464, false);
-        LibroVirtual libroVirtual4 = new LibroVirtual ("Matematica basica" , "sebastian torres", 60, 10465, false);
+        LibroVirtual libroVirtual1 = new LibroVirtual ("Fisica" , "Juan A", 10462, 120, false);
+        LibroVirtual libroVirtual2 = new LibroVirtual ("Computacion" , "alberto M", 10463, 170, false);
+        LibroVirtual libroVirtual3 = new LibroVirtual ("astronomia" , "Felipe J", 10464, 212 , false);
+        LibroVirtual libroVirtual4 = new LibroVirtual ("Matematica basica" , "sebastian torres", 10465, 65, false);
     
         Scanner scanner = new Scanner(System.in);
         boolean salir = false;
@@ -22,49 +22,97 @@ public class Ejer2 {
             System.out.println("3. Devolver libro");
             System.out.println("4. Disponibilidad");
             System.out.println("5. Salir");
+        
 
             
 
-                switch (opciones) {
+                switch (opciones = scanner.nextInt()) {
                     case 1:
         
-                        System.out.println("ingrese el numero del libro que desea consultar");  
+                        System.out.println("ingrese el numero del libro que desea consultar hay 4 opciones");  
                         int num = scanner.nextInt();
                        switch (num) {
                         case 1:
                         System.out.println(libroVirtual1.consultarLibro());
                         break;
-                        System.out.println(libroVirtual2.consultarLibro());
                         case 2:
+                        System.out.println(libroVirtual2.consultarLibro());
                         break;
-                        System.out.println(libroVirtual3.consultarLibro());
                         case 3: 
-                        break;
+                        System.out.println(libroVirtual3.consultarLibro());
+                        break;  
+                        case 4:
                         System.out.println(libroVirtual4.consultarLibro());
                         break;
                        }
+                       break;
                         
 
                     case 2:
-                        System.out.println(libroVirtual2.prestarLibro());
+                        System.out.println("Ingrese el numero del libro que desea solicitar");
+                        int num2 = scanner.nextInt();
+                        switch (num2) {
+                            case 1:
+                            System.out.println(libroVirtual1.prestarLibro());
+                            break;
+                            case 2:
+                            System.out.println(libroVirtual2.prestarLibro());
+                            break;
+                            case 3:
+                            System.out.println(libroVirtual3.prestarLibro());
+                            break;
+                            case 4:
+                            System.out.println(libroVirtual4.prestarLibro());
+                            break;
+                        }
                         break;
                     case 3:
-                        System.out.println(libroVirtual3.devolverLibro());
+                        System.out.println("ingrese el numero del libro que desea devolver");
+                        int num3 = scanner.nextInt();
+                        switch (num3) {
+                            case 1:
+                            System.out.println(libroVirtual1.devolverLibro());
+                            break;
+                            case 2:
+                            System.out.println(libroVirtual2.devolverLibro());
+                            break;
+                            case 3:
+                            System.out.println(libroVirtual3.devolverLibro());
+                            break;
+                            case 4:
+                            System.out.println(libroVirtual4.devolverLibro());
+                            break;
+                        }
                         break;
                     case 4:
-                        System.out.println(libroVirtual4.disponibilidad());
+                        System.out.println("ingrese el numero de libro que desea saber su disponibilidad");
+                        int num4 = scanner.nextInt();
+                        switch(num4) {
+                            case 1:
+                            System.out.println(libroVirtual1.disponibilidad());
+                            break;
+                            case 2:
+                            System.out.println(libroVirtual2.disponibilidad());
+                            break;
+                            case 3:
+                            System.out.println(libroVirtual3.disponibilidad());
+                            break;
+                            case 4:
+                            System.out.println(libroVirtual4.disponibilidad());
+                            break;
+                        }
                         break;
                     case 5:
-                        salir = true;
+                         salir = true;
                         break;
-                    default:
-                        System.out.println("Solo números entre 1 y 4");
+                        default:
+                        System.out.println("Solo números entre 1 y 5");
+                    
+                       
+            }
             
-            }       
-        }
-            
-            
-        }
+        } 
+        
     }
 
 }

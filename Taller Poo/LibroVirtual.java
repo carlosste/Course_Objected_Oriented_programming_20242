@@ -17,7 +17,7 @@ public class LibroVirtual {
     }   
 
     public String consultarLibro() {
-        return "El libro que consulto es: "+nombre;
+        return "El libro que consulto es: "+nombre + " de " + autor + " codigo: " + codigo + " numero de pag. " + num;
     }
 
     public String prestarLibro() {
