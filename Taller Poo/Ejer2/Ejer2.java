@@ -30,7 +30,11 @@ public class Ejer2 {
                 switch (opciones = scanner.nextInt()) {
                     case 1:
         
-                        System.out.println("ingrese el numero del libro que desea consultar hay 4 opciones");  
+                        System.out.println("ingrese el numero del libro que desea consultar hay 4 opciones"); 
+                        System.out.println("1." + libroVirtual1.getNombre());
+                        System.out.println("2." + libroVirtual2.getNombre());
+                        System.out.println("3." + libroVirtual3.getNombre());
+                        System.out.println("4." + libroVirtual4.getNombre()); 
                         int num = scanner.nextInt();
                        switch (num) {
                         case 1:
@@ -51,6 +55,7 @@ public class Ejer2 {
 
                     case 2:
                         System.out.println("Ingrese el numero del libro que desea solicitar");
+                        
                         int num2 = scanner.nextInt();
                         switch (num2) {
                             case 1:

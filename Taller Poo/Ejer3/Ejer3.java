@@ -18,7 +18,8 @@ public class Ejer3 {
  
             System.out.println("1. Vender producto");
             System.out.println("2. Comprar producto");
-            System.out.println("3. Salir");
+            System.out.println("3. Saber cantidad en stock");
+            System.out.println("4. Salir");
  
             try {
  
@@ -37,7 +38,10 @@ public class Ejer3 {
                         System.out.println(producto1.comprar(cantidadc));
                         break;
                     case 3:
-                        salir = true;
+                        System.out.println("La cantidad en stock es: " + producto1.getCantidadStock());
+                        break;
+                    case 4:
+                    salir = true;
                         break;
                     default:
                         System.out.println("Solo números entre 1 y 3");

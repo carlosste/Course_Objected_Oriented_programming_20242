@@ -34,6 +34,13 @@ public class CuentaBancaria {
 
         return "Su saldo actual es: " + saldo;
     } 
+public String getTitular() {
+        return titular;
+    }
+    public void setTitular(String titular){
+        this.titular = titular;
+    }
+
 
 
 } 

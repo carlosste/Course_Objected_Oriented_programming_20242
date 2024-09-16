@@ -36,5 +36,7 @@ public class LibroVirtual {
         }
         
     }
-    
+    public String getNombre() {
+        return nombre;
+    }
 }

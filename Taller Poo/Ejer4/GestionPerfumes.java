@@ -20,7 +20,9 @@ public class GestionPerfumes {
 public String precioPerfume() {
     return  " " + precio;
 }
-     
+     public String getNombre() {
+        return nombre;
+     }
 }
  
 

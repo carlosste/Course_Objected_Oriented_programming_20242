@@ -16,9 +16,10 @@ public class Ejer4 {
         int opcion;
         while (!salir) {
             
-            System.out.println("1. Precio de los perfumes");
-            System.out.println("2. Aplicar perfume");
-            System.out.println("3. Salir");
+            System.out.println("1. Nombre de los perfumes disponibles");
+            System.out.println("2. Precio de los perfumes");
+            System.out.println("3. Aplicar perfume");
+            System.out.println("4. Salir");
 
 
             try {
@@ -26,8 +27,14 @@ public class Ejer4 {
                 opcion = sn.nextInt();
 
                 switch (opcion) {
-                   
+                    
                     case 1:
+                        System.out.println("El nombre de los perfumes disponibles son");
+                        System.out.println("1. " + perfume1.getNombre());
+                        System.out.println("2. " + perfume2.getNombre());
+                    break;
+                   
+                    case 2:
                         System.out.println("De que perfume desea saber el precio: 1. Dior 2. Versace");
                         int num = sn.nextInt();
                         switch (opcion) {
@@ -40,7 +47,7 @@ public class Ejer4 {
                         }
                         
                       break;
-                    case 2:
+                    case 3:
                         System.out.println("Que perfume desea aplicar: 1. Dior 2. Versace");
                         int num2 = sn.nextInt();
                         switch (num2) {
@@ -59,8 +66,8 @@ public class Ejer4 {
                             break;
                         }
                         
-                    case 3:
-                        salir = false;
+                    case 4:
+                        salir = true;
                         break;
                     default:
                         System.out.println("Solo números entre 1 y 3");

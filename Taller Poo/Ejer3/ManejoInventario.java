@@ -32,4 +32,7 @@ private double precio;
 
 
     }
+    public int getCantidadStock(){
+        return cantidadStock;
+    }
 }

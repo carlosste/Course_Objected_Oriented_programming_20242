@@ -20,7 +20,7 @@ public class Ejer1 {
             System.out.println("1. Consultar saldo");
             System.out.println("2. Depositar saldo");
             System.out.println("3. Retirar saldo");
-            System.out.println("4. Ayuda");
+            System.out.println("4. Consultar titular");
             System.out.println("5. Salir");
 
             try {
@@ -43,7 +43,7 @@ public class Ejer1 {
                         System.out.println(cuentaBancaria1.retirar(montor));
                         break;
                     case 4:
-                        System.out.println("Llama a este numero para mas informacion: 3162502562 o al 314966910");
+                        System.out.println("El titular de la cuenta es: " + cuentaBancaria1.getTitular());
                         break;    
                     case 5:
                         salir = true;
