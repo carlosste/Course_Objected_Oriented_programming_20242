@@ -1,0 +1,5 @@
+
+
+Relaciones con la clase padre
+Relacion fuerte = tiene atributos de clase
+Relacion debil = argumentos o parametros de un metodo de la clase 
