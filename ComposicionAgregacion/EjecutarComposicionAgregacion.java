@@ -5,8 +5,10 @@ public class EjecutarComposicionAgregacion {
 
 
         Cliente objCliente1 = new Cliente("1008909765", "pipe", "Perez");
-        Cuenta objCuenta1 = new Cuenta("709876", "Ahorros", 0.0);
+        Cuenta objCuenta1 = new Cuenta("709876", "Ahorros", 150000.0);
+        Cuenta objCuenta2 = new Cuenta("709877", "ahorros", 400000.0);
         Banco objBanco1 = new Banco("900345123", "Banco UCC" , objCuenta1);
+        
        
         System.out.println(objBanco1);
         System.out.println(objBanco1.esCliente(objCliente1));

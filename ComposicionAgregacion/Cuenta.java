@@ -63,6 +63,26 @@ public class Cuenta {
         String msg= " ";
         if (nroCuenta.equals("709876")) {
             saldo += monto;
+            msg= "Consignacion exitosa....  saldo actual:" + saldo;
+        }else{
+            msg= "Consignacion fallida....  saldo actual:" + saldo;
+        }
+        return msg;
+    }
+
+public boolean retirar(String nroCuenta, double monto ) {
+        boolean flag = false;
+        if (nroCuenta.equals("709876")) {
+            saldo -= monto;
+            flag = true;
+        }
+        return flag;
+    }
+
+    public String retirarMsg(String nroCuenta, double monto ) {
+        String msg= " ";
+        if (nroCuenta.equals("709876")) {
+            saldo -= monto;
             msg= "Transaccion exitosa....  saldo actual:" + saldo;
         }else{
             msg= "Transaccion fallida....  saldo actual:" + saldo;
@@ -70,9 +90,17 @@ public class Cuenta {
         return msg;
     }
 
+    public boolean transferir(String nroCuenta, String nroCuentaDestino, double monto ) {
+        boolean flag = false;
+        if (nroCuenta.equals("709876")) {
+            saldo -= monto;
+            flag = true;
+        }
+        return flag;
+    }
 
-
-
+        public String ConsultarSaldo(double nroCuenta) {
+        System.out.println("su saldo actual es: " + saldo);
 
 
 }
