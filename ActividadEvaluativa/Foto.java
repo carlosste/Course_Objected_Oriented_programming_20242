@@ -8,12 +8,11 @@ public class Foto {
         this.fichero = fichero;
     }
 
-    public String getFichero() {
+    public String print() {
         return fichero;
     }
     
-    public void print(){
-        System.out.println("Imprimiendo foto: " + fichero);
-    }
+ 
     
+   
 }

@@ -18,5 +18,9 @@ public class Impresion extends Producto{
     public Foto[] getFoto() {
         return foto;
     }
+ public String toString(){
+        return "Impresion: " + color + " " + foto;
+    }
+    
     
 }
