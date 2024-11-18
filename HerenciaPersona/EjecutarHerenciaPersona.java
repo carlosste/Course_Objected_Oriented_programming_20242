@@ -18,7 +18,7 @@ public class EjecutarHerenciaPersona {
         p[3] = objP4;
         
         for (int i = 0; i<p.length; i++) {
-            System.out.println(p[i].getRol() + " "+ p[i].getNombre() + " "  + p[i].valoracion());
+            System.out.println(p[i].getRol() + " " + p[i].getNombre() + " "  + p[i].valoracion());
         }
     }
 }
